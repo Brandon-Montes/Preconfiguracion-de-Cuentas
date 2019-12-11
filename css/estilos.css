@@ -4,21 +4,24 @@
 	box-sizing: border-box;
   }
 
+html, body {
+	height: 100%;
+	margin: 0;
+	display: flex;
+	flex-direction: column; 
+}
+
 .fondo {
 	background: #DADCDF;
 	height: 1000px;
-	min-height: 100%;
-	background-size: cover;
 }
 
 .divPrincipal {
 	background-color:#DADCDF; 
-	width:82%; 
-	height: 640px; 
-	margin-left: auto;
-  	margin-right: auto;
-  	position: relative;
+	width:100%; 
+	display: flex;
 }
+
 
 .inputName {
 	background-color: #E8E8E8;
@@ -28,16 +31,18 @@
 	color: #444;
 	border-radius: 9px;
 	overflow: hidden;
-	width: 350px;
+	width: 405px;
 	border-radius: 9px;
 }
 
 /* SCROLL 1 INPUT */
 .fondoInput {
-	 background-color: #fff;
-	 height: 640px;
-	 border-radius: 10px 0 0 10px;
+	 background-color: #FAFAFA;
+	 height: 1000px;
+	 width: 500px;
+	 /*border-radius: 10px 0 0 10px;*/
 	 overflow: auto;
+	 
     }
 
 .fondoInput::-webkit-scrollbar {
@@ -49,23 +54,43 @@
 }
 
 
-.md-button:not([disabled]):hover {
-  background-color: rgba(158, 158, 158, 0.2);
+.btn1 {
+	padding: 0px 3px;
+	margin: 0 20px;
+	background-color: #fff;
+	border: none;
+	font-size: 15px;
+	color: #848484;
+ }
+
+ .btn1:hover {
+ 	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #555555;
+ }
+
+
+.btn2 {  
+  background-color: #68D12C;
+  color: #fff;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  padding: 5px 30px;
+  font-size: 18px;
+  display: inline-block;
 }
 
-.btn2 {
-  
-  background-color: #D4D3D3;
-  border-radius: 5px;
-  font-size: 16px;
+.btn2:hover {
+	background-color: #6ACA34;
 }
 
 /* DIV DERECHA */
 
 .fondoDescri {
 	 background-color: #0575E6;
-	 border-radius: 0px 10px 10px 0px;
-	 height: 640px;
+	 /*border-radius: 0px 10px 10px 0px;*/
+	 height:1000px;
 	 color: #fff;
 	 background: -webkit-linear-gradient(to left, #1030A8, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
 	 background: linear-gradient(to left, #1030A8, #0575E6);
@@ -74,9 +99,9 @@
 
 .image1 {
 	position: absolute;
-	top: 365px;
-	left:390px;
-	width:250px;
+	top: 370px;
+	left:465px;
+	width:270px;
 
 }
 
@@ -84,35 +109,35 @@
 	position: absolute;
 	width:160px;
 	top: 440px;
-	left: 115px;
+	left: 130px;
 }
 
 .image3 {
 	position: absolute;
 	width: 130px;
-	left: 10px;
+	left: 25px;
 	top: 350px;
 }
 
 .image4 {
 	position: absolute;
 	width: 170px;
-	left: 60px;
-	top: 230px;
+	left: 90px;
+	top: 240px;
 }
 
 .div {
 	position: absolute;
 	width: 350px;
 	height: 390px;
-	top: 25px;
-	left: 300px;
+	top: 23px;
+	left: 340px;
 	color: #444;
 	color: #fff;
 	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 23px;
+	font-size: 25px;
 }
 
-.yei {
+.info {
 	padding: 5px;
 }
